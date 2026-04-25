@@ -1,0 +1,412 @@
+/* SECTION */
+.section {
+  margin-bottom: 4rem;
+  background: linear-gradient(135deg, rgba(0,245,212,0.03) 0%, rgba(0,245,212,0.01) 100%);
+  border: 1px solid rgba(0,245,212,0.1);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color .3s, box-shadow .3s;
+}
+.section:hover {
+  border-color: rgba(0,245,212,0.2);
+  box-shadow: 0 0 40px rgba(0,245,212,0.05);
+}
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--teal), var(--mag));
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* SECTION TITLE */
+.sectionTitle {
+  font-family: var(--ff-display);
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--teal);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 1.5rem;
+}
+.sectionTitle::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--teal);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--teal);
+}
+.sectionTitle::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--teal), transparent);
+}
+
+/* PACK META BADGES */
+.packMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0,245,212,0.08);
+  border: 1px solid rgba(0,245,212,0.2);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.6875rem;
+  color: var(--teal);
+  font-family: var(--ff-mono);
+  letter-spacing: 0.06em;
+}
+
+/* PACKS GRID */
+.packsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+/* PACK CARD */
+.packCard {
+  background: var(--bg3);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 0.75rem;
+  padding: 1.5rem 1.25rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform .25s, box-shadow .25s;
+  cursor: default;
+}
+.packCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,245,212,0.15);
+}
+.packCard.popular {
+  border-color: rgba(0,245,212,0.3);
+  background: linear-gradient(135deg, rgba(0,245,212,0.05), rgba(0,245,212,0.02));
+}
+.popularBadge {
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  background: var(--teal);
+  color: var(--bg);
+  font-family: var(--ff-display);
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 4px 28px;
+  transform: rotate(35deg);
+}
+.packName {
+  font-family: var(--ff-display);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--teal);
+  text-transform: uppercase;
+  margin-bottom: 0.625rem;
+}
+.packPrice {
+  font-family: var(--ff-display);
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1;
+}
+.packNote {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+  font-family: var(--ff-body);
+  letter-spacing: 0.05em;
+}
+
+/* PLATFORM CHIPS */
+.platformRow {
+  display: flex;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+.platformChip {
+  font-size: 0.6875rem;
+  padding: 3px 10px;
+  border-radius: 30px;
+  font-family: var(--ff-mono);
+  letter-spacing: 0.05em;
+  background: rgba(0,245,212,0.12);
+  color: var(--teal);
+  border: 1px solid rgba(0,245,212,0.25);
+}
+.platformChip.ios {
+  background: rgba(255,0,200,0.1);
+  color: var(--mag);
+  border: 1px solid rgba(255,0,200,0.2);
+}
+
+/* ADDON */
+.addon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+  background: rgba(0,245,212,0.06);
+  border: 1px solid rgba(0,245,212,0.15);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+.addonLabel {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+.addonPrice {
+  font-family: var(--ff-display);
+  font-size: 0.875rem;
+  color: var(--teal);
+  font-weight: 700;
+  margin-left: auto;
+}
+
+/* ITEMS GRID (Graphic Design) */
+.itemsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+.itemCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg3);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 0.625rem;
+  padding: 1rem 1.125rem;
+  transition: background .2s, border-color .2s;
+}
+.itemCard:hover {
+  background: var(--bg4);
+  border-color: rgba(0,245,212,0.2);
+}
+.itemName {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0.03em;
+}
+.itemSub {
+  font-size: 0.6875rem;
+  color: var(--muted);
+  margin-top: 2px;
+  font-family: var(--ff-mono);
+}
+.itemPrice {
+  font-family: var(--ff-display);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--teal);
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+/* SERVICE LIST (Video/Photo/Shoot) */
+.serviceList {
+  display: flex;
+  flex-direction: column;
+}
+.serviceRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding: 1rem 0;
+  gap: 10px;
+}
+.serviceRow:last-child {
+  border-bottom: none;
+}
+.serviceName {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--white);
+}
+.serviceDetail {
+  font-size: 0.75rem;
+  color: var(--teal);
+  font-family: var(--ff-mono);
+  margin-top: 3px;
+}
+.servicePrice {
+  font-family: var(--ff-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--teal);
+  white-space: nowrap;
+}
+
+/* COMBO LIST */
+.comboList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.comboCard {
+  background: linear-gradient(135deg, rgba(0,245,212,0.07), rgba(255,0,200,0.07));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 0.75rem;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  transition: transform .2s, box-shadow .2s;
+}
+.comboCard:hover {
+  transform: translateX(6px);
+  box-shadow: -4px 0 0 var(--teal);
+}
+.comboName {
+  font-family: var(--ff-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.1em;
+}
+.comboIncludes {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 5px;
+}
+.comboPrice {
+  font-family: var(--ff-display);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--teal);
+  white-space: nowrap;
+  text-shadow: 0 0 20px rgba(0,245,212,0.4);
+}
+
+/* MONTHLY PLANS */
+.monthlyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.monthlyCard {
+  border-radius: 0.875rem;
+  padding: 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform .3s;
+  border: 1px solid rgba(0,245,212,0.2);
+  background: linear-gradient(145deg, var(--bg2), var(--bg3));
+}
+.monthlyCard:hover {
+  transform: translateY(-6px);
+}
+.monthlyCard.starter {
+  border-color: rgba(0,245,212,0.2);
+}
+.monthlyCard.business {
+  border-color: rgba(255,0,200,0.3);
+  background: linear-gradient(145deg, rgba(255,0,200,0.03), var(--bg3));
+}
+.monthlyCard.premium {
+  border-color: rgba(255,0,200,0.5);
+  background: linear-gradient(145deg, rgba(255,0,200,0.05), var(--bg3));
+  box-shadow: 0 0 30px rgba(255,0,200,0.1);
+}
+.monthlyTier {
+  font-family: var(--ff-display);
+  font-size: 0.6875rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 0.75rem;
+}
+.monthlyCard.business .monthlyTier,
+.monthlyCard.premium .monthlyTier {
+  color: var(--mag);
+}
+.monthlyPrice {
+  font-family: var(--ff-display);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1;
+}
+.monthlyPrice sup {
+  font-size: 0.45em;
+  color: var(--muted);
+  vertical-align: super;
+}
+.monthlyPrice sub {
+  font-size: 0.35em;
+  color: var(--muted);
+}
+.monthlyFeatures {
+  margin-top: 1rem;
+  list-style: none;
+}
+.monthlyFeatures li {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.monthlyFeatures li::before {
+  content: '▸';
+  color: var(--teal);
+  font-size: 0.625rem;
+}
+.monthlyCard.business .monthlyFeatures li::before,
+.monthlyCard.premium .monthlyFeatures li::before {
+  color: var(--mag);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 2.5rem 1.25rem;
+  font-family: var(--ff-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  margin-top: 2rem;
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px) {
+  .packsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .itemsGrid {
+    grid-template-columns: 1fr;
+  }
+  .comboCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .section {
+    padding: 2rem 1.25rem;
+  }
+}

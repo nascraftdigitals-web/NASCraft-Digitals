@@ -1,0 +1,5 @@
+.badge{position:fixed;bottom:28px;right:28px;z-index:600;display:flex;align-items:center;gap:10px;background:rgba(0,0,0,.9);border:1px solid rgba(0,245,212,.28);padding:10px 16px;font-family:var(--ff-mono);font-size:9px;letter-spacing:1.5px;color:var(--white);transform:translateY(80px);opacity:0;animation:availSlide .6s ease forwards 2.6s;clip-path:polygon(6px 0%,100% 0%,calc(100% - 6px) 100%,0% 100%);backdrop-filter:blur(12px);transition:border-color .25s,box-shadow .25s;}
+.badge:hover{border-color:var(--teal);box-shadow:0 0 24px var(--teal-g);}
+.dot{width:8px;height:8px;background:#00FF88;border-radius:50%;flex-shrink:0;animation:availPulse 1.8s ease-in-out infinite;}
+.wa{position:fixed;bottom:28px;left:28px;z-index:600;width:48px;height:48px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 4px 20px rgba(37,211,102,.35);transform:translateY(80px);opacity:0;animation:availSlide .6s ease forwards 2.8s;transition:transform .25s,box-shadow .25s;}
+.wa:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(37,211,102,.5);}

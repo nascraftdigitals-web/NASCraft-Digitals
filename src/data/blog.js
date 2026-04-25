@@ -1,0 +1,110 @@
+export const blogPosts = [
+  {
+    id: 1,
+    slug: 'react-performance-optimization-2025',
+    title: 'React Performance Optimization: Best Practices for 2025',
+    excerpt: 'Learn the latest techniques to optimize your React applications for blazing-fast performance and better user experience.',
+    category: 'Web Dev',
+    author: 'Nascraft Team',
+    readTime: '8 min read',
+    date: '2025-01-15',
+    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80',
+    tags: ['React', 'Performance', 'JavaScript']
+  },
+  {
+    id: 2,
+    slug: 'design-trends-2025',
+    title: '10 Web Design Trends Dominating 2025',
+    excerpt: 'Discover the hottest design trends shaping the digital landscape this year, from glassmorphism to AI-generated art.',
+    category: 'Design',
+    author: 'Aaruhya Kumar',
+    readTime: '6 min read',
+    date: '2025-01-12',
+    image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80',
+    tags: ['Design', 'Trends', 'UI/UX']
+  },
+  {
+    id: 3,
+    slug: 'seo-guide-small-business',
+    title: 'Complete SEO Guide for Small Businesses in India',
+    excerpt: 'A comprehensive guide to ranking your small business website on Google and attracting local customers.',
+    category: 'Marketing',
+    author: 'Nishanth Ravikumar',
+    readTime: '12 min read',
+    date: '2025-01-10',
+    image: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&q=80',
+    tags: ['SEO', 'Marketing', 'Business']
+  },
+  {
+    id: 4,
+    slug: 'choosing-right-tech-stack',
+    title: 'How to Choose the Right Tech Stack for Your Startup',
+    excerpt: 'Navigate the complex world of technology choices with our practical guide for startup founders.',
+    category: 'Tech',
+    author: 'Nascraft Team',
+    readTime: '10 min read',
+    date: '2025-01-08',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80',
+    tags: ['Startup', 'Technology', 'Development']
+  },
+  {
+    id: 5,
+    slug: 'brand-identity-matters',
+    title: 'Why Brand Identity Matters More Than Ever',
+    excerpt: 'Understanding the psychology behind memorable brands and how to create one that resonates with your audience.',
+    category: 'Design',
+    author: 'Srihariharan',
+    readTime: '7 min read',
+    date: '2025-01-05',
+    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80',
+    tags: ['Branding', 'Design', 'Strategy']
+  },
+  {
+    id: 6,
+    slug: 'meta-ads-roi-guide',
+    title: 'Maximizing ROI with Meta Ads: A Data-Driven Approach',
+    excerpt: 'Learn how to create high-converting Facebook and Instagram ad campaigns that actually deliver results.',
+    category: 'Marketing',
+    author: 'Nascraft Team',
+    readTime: '9 min read',
+    date: '2025-01-03',
+    image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80',
+    tags: ['Meta Ads', 'Marketing', 'ROI']
+  },
+  {
+    id: 7,
+    slug: 'nextjs-vs-react',
+    title: 'Next.js vs React: Which Should You Choose in 2025?',
+    excerpt: 'A detailed comparison of Next.js and React to help you make the right choice for your next project.',
+    category: 'Web Dev',
+    author: 'Nascraft Team',
+    readTime: '11 min read',
+    date: '2025-01-01',
+    image: 'https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=600&q=80',
+    tags: ['Next.js', 'React', 'Web Development']
+  },
+  {
+    id: 8,
+    slug: 'startup-digital-strategy',
+    title: 'Building a Digital Strategy for Your Startup: Step-by-Step',
+    excerpt: 'From MVP to market leader: a practical roadmap for startups to establish their digital presence.',
+    category: 'Business',
+    author: 'Nishanth Ravikumar',
+    readTime: '15 min read',
+    date: '2024-12-28',
+    image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&q=80',
+    tags: ['Startup', 'Strategy', 'Business']
+  },
+  {
+    id: 9,
+    slug: 'figma-to-code-workflow',
+    title: 'Streamlining Your Figma to Code Workflow',
+    excerpt: 'Best practices and tools to bridge the gap between design and development efficiently.',
+    category: 'Design',
+    author: 'Aaruhya Kumar',
+    readTime: '8 min read',
+    date: '2024-12-25',
+    image: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=600&q=80',
+    tags: ['Figma', 'Design', 'Development']
+  }
+]

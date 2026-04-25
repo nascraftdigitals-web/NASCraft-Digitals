@@ -1,0 +1,34 @@
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:500;height:auto;padding:16px 5%;transition:background .4s,border-color .4s;border-bottom:1px solid rgba(0,245,212,.15);background:rgba(0,0,0,.95);backdrop-filter:blur(12px);}
+.scrolled{background:rgba(0,0,0,.98);backdrop-filter:blur(22px);border-color:var(--border);}
+.inner{display:flex;align-items:center;justify-content:space-between;gap:40px;}
+.logo{font-family:var(--ff-display);font-size:24px;font-weight:900;letter-spacing:2px;display:flex;align-items:center;gap:8px;color:var(--white);}
+.logo em{color:var(--teal);font-style:normal;}
+.gem{width:8px;height:8px;background:var(--mag);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);animation:gemSpin 4s linear infinite;flex-shrink:0;}
+.links{display:flex;gap:28px;align-items:center;flex:1;}
+.link{font-family:var(--ff-display);font-size:14px;font-weight:700;letter-spacing:1px;color:var(--white);transition:color .25s;position:relative;padding-bottom:4px;}
+.link::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--teal);transition:width .3s;}
+.link:hover,.link.active{color:var(--teal);}
+.link:hover::after,.link.active::after{width:100%;}
+.ctaBtn{font-family:var(--ff-display);font-size:13px;font-weight:700;letter-spacing:1.5px;padding:10px 24px;background:var(--teal);color:var(--void);border:none;transition:all .25s;flex-shrink:0;}
+.ctaBtn:hover{background:var(--teal-d);box-shadow:0 0 24px rgba(0,245,212,.3);}
+.ham{display:none;background:transparent;border:none;color:var(--teal);}
+
+/* Mobile menu */
+.mobileMenu{
+  position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;
+  background:rgba(0,0,0,.97);backdrop-filter:blur(24px);
+  z-index:490;display:flex;flex-direction:column;gap:6px;
+  padding:32px 5%;border-top:1px solid var(--border);
+  transform:translateX(100%);transition:transform .38s cubic-bezier(.16,1,.3,1);
+  pointer-events:none;
+}
+.mobileOpen{transform:translateX(0);pointer-events:all;}
+.mobileLink{font-family:var(--ff-mono);font-size:16px;letter-spacing:3px;color:var(--muted);padding:14px 0;border-bottom:1px solid rgba(0,245,212,.06);transition:color .25s;}
+.mobileLink:hover,.mobileLink.active{color:var(--teal);}
+.mobileCta{margin-top:20px;align-self:flex-start;}
+
+@media(max-width:900px){
+  .links,.ctaBtn{display:none;}
+  .ham{display:flex;}
+}
