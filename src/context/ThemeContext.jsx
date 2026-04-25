@@ -72,7 +72,7 @@ function applyTheme(theme) {
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem('theme')
-    return saved || 'auto'
+    return saved || 'dark'
   })
 
   useEffect(() => {
