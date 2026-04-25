@@ -115,7 +115,7 @@ a.infoVal:hover { color: var(--teal); }
   justify-content: center;
   font-family: var(--ff-mono);
   font-size: 0.5rem;
-  color: rgba(255,255,255,0.3);
+  color: var(--text-muted);
   flex-shrink: 0;
   transition: all 0.3s ease;
 }
@@ -130,14 +130,14 @@ a.infoVal:hover { color: var(--teal); }
 .stepDone .stepDot {
   border-color: var(--teal);
   background: var(--teal);
-  color: #000;
+  color: var(--bg);
 }
 
 .stepLabel {
   font-family: var(--ff-mono);
   font-size: 0.5rem;
   letter-spacing: 2px;
-  color: rgba(255,255,255,0.2);
+  color: var(--text-muted);
   transition: color 0.3s;
 }
 
@@ -184,7 +184,7 @@ a.infoVal:hover { color: var(--teal); }
   font-family: var(--ff-mono);
   font-size: 0.75rem;
   letter-spacing: 2px;
-  color: rgba(255,255,255,0.6);
+  color: var(--text-muted);
 }
 
 /* ── OPTION BUTTONS ───────────────────────────── */
@@ -205,7 +205,7 @@ a.infoVal:hover { color: var(--teal); }
   font-family: var(--ff-mono);
   font-size: 0.5625rem;
   letter-spacing: 1.5px;
-  color: rgba(255,255,255,0.5);
+  color: var(--text-muted);
   background: transparent;
   border: 1px solid var(--border);
   padding: 0.75rem 1rem;
@@ -220,7 +220,7 @@ a.infoVal:hover { color: var(--teal); }
 
 .optionBtn:hover {
   border-color: rgba(0,245,212,0.3);
-  color: rgba(255,255,255,0.8);
+  color: var(--text);
   background: rgba(0,245,212,0.04);
 }
 
@@ -301,7 +301,7 @@ a.infoVal:hover { color: var(--teal); }
 .summaryItem {
   font-family: var(--ff-mono);
   font-size: 0.5625rem;
-  color: rgba(255,255,255,0.6);
+  color: var(--text-muted);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -327,7 +327,7 @@ a.infoVal:hover { color: var(--teal); }
   font-family: var(--ff-mono);
   font-size: 0.625rem;
   letter-spacing: 2px;
-  color: rgba(255,255,255,0.4);
+  color: var(--text-muted);
   background: transparent;
   border: 1px solid var(--border);
   padding: 0.75rem 1rem;
@@ -336,12 +336,12 @@ a.infoVal:hover { color: var(--teal); }
   clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
 }
 
-.backBtn:hover { color: var(--text); border-color: rgba(255,255,255,0.3); }
+.backBtn:hover { color: var(--text); border-color: var(--border); }
 
 .termSubmit {
   flex: 1;
   background: var(--teal);
-  color: #000;
+  color: var(--bg);
   font-family: var(--ff-mono);
   font-size: 0.6875rem;
   letter-spacing: 2px;
