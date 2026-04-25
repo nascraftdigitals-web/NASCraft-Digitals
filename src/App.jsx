@@ -9,7 +9,6 @@ import ScrollProgress from './components/ScrollProgress'
 import BackToTop from './components/BackToTop'
 import Cursor from './components/Cursor'
 import Preloader from './components/Preloader'
-import ThemeToggle from './components/ThemeToggle'
 import LiveChat from './components/LiveChat'
 import { AvailBadge, WhatsAppBtn } from './components/FloatingButtons'
 
@@ -78,7 +77,6 @@ export default function App() {
           <Layout />
         </BrowserRouter>
       </div>
-      <ThemeToggle />
       <BackToTop />
     </ThemeProvider>
   )

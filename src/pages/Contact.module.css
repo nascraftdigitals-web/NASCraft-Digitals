@@ -46,9 +46,10 @@
   font-family: var(--ff-mono);
   font-size: 0.5rem;
   letter-spacing: 2px;
-  color: var(--text-muted);
+  color: var(--mag);
   display: block;
   margin-bottom: 0.2rem;
+  font-weight: 700;
 }
 
 .infoVal {
@@ -400,4 +401,15 @@ a.infoVal:hover { color: var(--teal); }
   .optionGrid { grid-template-columns: 1fr; }
   .termNav { flex-direction: column; }
   .termSubmit { width: 100%; }
+}
+
+@media(max-width:768px){
+  .grid{grid-template-columns:1fr;gap:2rem;}
+  .optionGrid{grid-template-columns:1fr;}
+  .optionBtn{min-height:44px;}
+  .termInput,.termTextarea{font-size:1rem;}
+  .termNav{flex-direction:column;}
+  .termSubmit,.backBtn{width:100%;justify-content:center;min-height:44px;}
+  .stepBar{padding:0.75rem 1rem;gap:0.25rem;}
+  .stepLabel{display:none;}
 }

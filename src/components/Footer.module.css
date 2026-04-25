@@ -38,3 +38,10 @@
   .cols{gap:3.25rem;}
   .brand{max-width:17.5rem;}
 }
+
+@media(max-width:768px){
+  .top{flex-direction:column;gap:2rem;}
+  .cols{flex-direction:column;gap:1.5rem;}
+  .brand{max-width:100%;}
+  .bot{flex-direction:column;align-items:flex-start;gap:0.5rem;}
+}

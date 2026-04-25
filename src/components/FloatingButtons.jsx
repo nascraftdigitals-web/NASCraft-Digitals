@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { FaWhatsapp } from 'react-icons/fa'
 import styles from './FloatingButtons.module.css'
 
-const WHATSAPP = 'https://wa.me/919999999999?text=Hi%20Nascraft!%20I%27d%20like%20to%20discuss%20a%20project.'
+const WHATSAPP = 'https://wa.me/916374316014?text=Hi%20Nascraft!%20I%27d%20like%20to%20discuss%20a%20project.'
 
 export function AvailBadge() {
   const nav = useNavigate()

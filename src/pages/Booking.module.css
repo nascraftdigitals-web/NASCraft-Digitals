@@ -69,3 +69,16 @@
 @media(max-width:900px){.formGrid{grid-template-columns:1fr;}.detailsCard{position:static;}.benefitsGrid{grid-template-columns:1fr;}}
 @media(max-width:600px){.dateGrid{grid-template-columns:repeat(4,1fr);}.timeGrid{grid-template-columns:repeat(2,1fr);}.meetGrid{flex-direction:column;}}
 @media(max-width:480px){.dateGrid{grid-template-columns:repeat(3,1fr);}.timeGrid{grid-template-columns:repeat(2,1fr);}}
+
+@media(max-width:768px){
+  .formGrid{grid-template-columns:1fr;}
+  .detailsCard{position:static;}
+  .dateGrid{grid-template-columns:repeat(4,1fr);}
+  .timeGrid{grid-template-columns:repeat(2,1fr);}
+  .meetGrid{flex-direction:column;}
+  .meetBtn{min-height:44px;}
+  .submitBtn{min-height:44px;}
+  .benefitsGrid{grid-template-columns:1fr;}
+  .pickerStep{padding:1.25rem;}
+  .confDetails{padding:1.5rem;}
+}

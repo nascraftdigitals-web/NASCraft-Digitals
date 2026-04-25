@@ -597,3 +597,101 @@
   .missionCards { grid-template-columns: 1fr; }
   .ctaBtns { flex-direction: column; align-items: stretch; }
 }
+
+@media(max-width:768px){
+
+  /* ── HERO ── */
+  .hero{
+    min-height:auto;
+    padding:calc(var(--nav-h) + 2rem) 5% 3rem;
+    align-items:flex-start;
+  }
+  .heroInner{ width:100%; }
+  .heroLabel{ margin-bottom:1.25rem; font-size:0.5rem; }
+  .headline{ margin-bottom:1.25rem; gap:0; }
+  .hRow{ font-size:clamp(3rem,14vw,5.5rem); letter-spacing:1px; }
+  .heroPara{ font-size:0.875rem; max-width:100%; margin-bottom:1.75rem; }
+  .heroScroll{ display:none; }
+
+  /* ── MISSION ── */
+  .missionGrid{ grid-template-columns:1fr; gap:2rem; }
+  .bigStatement{
+    font-size:clamp(2rem,9vw,3.25rem);
+    letter-spacing:-1px;
+    line-height:1.08;
+  }
+  .missionRight{ gap:1rem; }
+  .bodyText{ font-size:0.9375rem; }
+  .missionCards{ grid-template-columns:1fr; gap:0.75rem; margin:0.25rem 0; }
+  .missionCard{ padding:1.25rem; }
+
+  /* ── STATS BAND ── */
+  .statItem{ padding:1.5rem 1.75rem; gap:1rem; }
+  .statN{ font-size:clamp(1.5rem,6vw,2.25rem); }
+  .statL{ font-size:0.5rem; letter-spacing:2px; }
+
+  /* ── VALUES ── */
+  .valuesGrid{ grid-template-columns:1fr; }
+  .valueCard{
+    padding:1.75rem 0;
+    gap:0.875rem;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .valNum{
+    font-size:0.5rem;
+    min-width:auto;
+    padding-top:0;
+  }
+  .valIco{ font-size:2rem; }
+  .valTitle{ font-size:1.125rem; margin-bottom:0.5rem; }
+  .valDesc{ font-size:0.875rem; line-height:1.75; }
+
+  /* ── TIMELINE ── */
+  .timeline{ padding:0.5rem 0; }
+  .timelineLine{ left:0.875rem; }
+  .tlItem{
+    padding-left:2.75rem;
+    padding-right:0;
+    justify-content:flex-start;
+    margin-bottom:1.75rem;
+  }
+  .tlItem.tlRight{
+    padding-left:2.75rem;
+    padding-right:0;
+    justify-content:flex-start;
+  }
+  .tlDot{ left:calc(0.875rem - 5px); top:1.25rem; }
+  .tlCard{
+    max-width:100%;
+    width:100%;
+    padding:1.25rem 1.25rem;
+  }
+  .tlCard:hover{ transform:none; }
+  .tlTitle{ font-size:1.0625rem; }
+  .tlDesc{ font-size:0.8125rem; }
+
+  /* ── TEAM ── */
+  .teamGrid{
+    grid-template-columns:1fr;
+    gap:1.25rem;
+    margin-bottom:2rem;
+  }
+  .memberImgWrap{ padding-bottom:85%; }
+  .memberOverlay{ opacity:1; background:linear-gradient(to top,rgba(0,0,0,0.8) 0%,transparent 60%); }
+  .memberInfo{ padding:1rem 1.25rem; }
+  .memberName{ font-size:1rem; }
+  .teamBadge{ padding:1.5rem 1rem; gap:0.75rem; }
+  .badgeText{ font-size:clamp(1rem,5vw,1.5rem); }
+
+  /* ── CTA BAND ── */
+  .ctaBand{ padding:3.5rem 0; }
+  .ctaTitle{
+    font-size:clamp(1.75rem,8vw,3rem);
+    letter-spacing:-1px;
+    margin-bottom:1rem;
+  }
+  .ctaSub{ font-size:0.9375rem; margin-bottom:2rem; }
+  .ctaBtns{ flex-direction:column; align-items:stretch; width:100%; }
+  .ctaBtns a,.ctaBtns button{ width:100%; justify-content:center; min-height:44px; }
+}

@@ -74,3 +74,15 @@
 @media(max-width:600px){.steps{grid-template-columns:1fr;}.toolsGrid{grid-template-columns:repeat(3,1fr);}.commGrid{grid-template-columns:1fr;}}
 @media(max-width:480px){.toolsGrid{grid-template-columns:repeat(2,1fr);}}
 
+
+@media(max-width:768px){
+  .steps{grid-template-columns:1fr;}
+  .toolsGrid{grid-template-columns:repeat(2,1fr);}
+  .timelineGrid{grid-template-columns:1fr;}
+  .commGrid{grid-template-columns:1fr;}
+  .needsGrid{grid-template-columns:1fr;}
+  .policyGrid{grid-template-columns:1fr;}
+  .faqQ{font-size:0.875rem;padding:1rem 0;}
+  .stepCard{padding:1.25rem 1rem;}
+  .cta{padding:3.5rem 5%;}
+}

@@ -6,10 +6,13 @@ import PageHero from '../components/PageHero'
 import { useRevealAll } from '../hooks/useReveal'
 import styles from './Contact.module.css'
 
-const EMAILJS_SERVICE  = 'YOUR_SERVICE_ID'
-const EMAILJS_TEMPLATE = 'YOUR_TEMPLATE_ID'
-const EMAILJS_PUBLIC   = 'YOUR_PUBLIC_KEY'
-const WHATSAPP = 'https://wa.me/919999999999?text=Hi%20Nascraft!%20I%27d%20like%20to%20discuss%20a%20project.'
+const EMAILJS_SERVICE  = 'service_oofffy9'
+const EMAILJS_TEMPLATE = 'template_sor4y3o'
+const EMAILJS_PUBLIC   = '550K_3hBeckOCZK-J'
+const WHATSAPP = 'https://wa.me/916374316014?text=Hi%20Nascraft!%20I%27d%20like%20to%20discuss%20a%20project.'
+const WHATSAPP_SUPPORT = 'https://wa.me/919962475256?text=Hi%20Nascraft!%20I%20need%20support.'
+const PHONE_DISPLAY = '+91 6374 316 014'
+const PHONE_SUPPORT = '+91 99624 75256'
 
 const SERVICES = ['Website Development','Branding & Identity','Graphic Design','Digital Marketing','UI/UX Design','AI & Automation','Startup Support','Full Package']
 const BUDGETS  = ['Under ₹5,000','₹5,000 – ₹15,000','₹15,000 – ₹35,000','₹35,000+','Let\'s Discuss']
@@ -67,7 +70,8 @@ export default function Contact() {
               <div className={`${styles.infoList} reveal d3`}>
                 {[
                   { icon: <FiMail />, label: 'EMAIL', val: 'nascraftdigitals@gmail.com', href: 'mailto:nascraftdigitals@gmail.com' },
-                  { icon: <FaWhatsapp />, label: 'WHATSAPP', val: '+91 XXXXX XXXXX', href: WHATSAPP },
+                  { icon: <FaWhatsapp />, label: 'WHATSAPP', val: PHONE_DISPLAY, href: WHATSAPP },
+                  { icon: <FaWhatsapp />, label: 'CLIENT SUPPORT', val: PHONE_SUPPORT, href: WHATSAPP_SUPPORT },
                   { icon: <FiMapPin />, label: 'LOCATION', val: 'India & Global' },
                   { icon: <FiClock />, label: 'RESPONSE TIME', val: 'Within 24 Hours' },
                 ].map((item, i) => (
