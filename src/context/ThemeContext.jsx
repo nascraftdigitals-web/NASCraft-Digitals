@@ -70,10 +70,7 @@ function applyTheme(theme) {
 }
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState(() => {
-    const saved = localStorage.getItem('theme')
-    return saved || 'dark'
-  })
+  const [theme, setTheme] = useState('dark')
 
   useEffect(() => {
     applyTheme(theme)

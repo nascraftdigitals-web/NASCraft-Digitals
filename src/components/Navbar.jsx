@@ -108,7 +108,7 @@ export default function Navbar() {
             style={{ transitionDelay: open ? `${NAV_LINKS.length * 60 + 100}ms` : '0ms' }}
           >
             <Link to="/contact" className={`btn-p ${styles.overlayCtaBtn}`}>
-              START A PROJECT <FiArrowUpRight />
+              HIRE US <FiArrowUpRight />
             </Link>
             <Link to="/booking" className={`btn-outline ${styles.overlayCtaBtn}`}>
               BOOK A FREE CALL

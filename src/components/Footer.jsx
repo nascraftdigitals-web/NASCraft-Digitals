@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom'
-import { FaLinkedinIn, FaInstagram, FaTwitter, FaGithub, FaWhatsapp } from 'react-icons/fa'
+import { FaInstagram, FaGithub, FaWhatsapp } from 'react-icons/fa'
 import styles from './Footer.module.css'
 
 const WHATSAPP = 'https://wa.me/916374316014'
-const PHONE_DISPLAY = '+91 6374 316 014 / +91 9344 531 196 / +91 9962 475 256'
+const PHONE_NUMBERS = [
+  { display: '+91 6374 316 014', link: 'https://wa.me/916374316014' },
+  { display: '+91 9344 531 196', link: 'https://wa.me/919344531196' },
+  { display: '+91 9962 475 256', link: 'https://wa.me/919962475256' }
+]
 const SOCIALS = {
-  instagram: 'https://www.instagram.com/nascraft.digitals',
-  linkedin:  'https://www.linkedin.com/company/nascraft-digitals',
-  twitter:   'https://twitter.com/nascraftdigital',
-  github:    'https://github.com/nascraft-digitals',
+  instagram: 'https://www.instagram.com/nascraftdigitals____/',
+  github:    'https://github.com/nascraftdigitals-web',
 }
 
 export default function Footer() {
@@ -23,8 +25,6 @@ export default function Footer() {
             <div className={styles.socials}>
               <a href={WHATSAPP} target="_blank" rel="noreferrer" className={styles.soc} data-hover aria-label="WhatsApp"><FaWhatsapp /></a>
               <a href={SOCIALS.instagram} target="_blank" rel="noreferrer" className={styles.soc} data-hover aria-label="Instagram"><FaInstagram /></a>
-              <a href={SOCIALS.linkedin} target="_blank" rel="noreferrer" className={styles.soc} data-hover aria-label="LinkedIn"><FaLinkedinIn /></a>
-              <a href={SOCIALS.twitter} target="_blank" rel="noreferrer" className={styles.soc} data-hover aria-label="Twitter"><FaTwitter /></a>
               <a href={SOCIALS.github} target="_blank" rel="noreferrer" className={styles.soc} data-hover aria-label="GitHub"><FaGithub /></a>
             </div>
           </div>
@@ -47,7 +47,9 @@ export default function Footer() {
             <div className={styles.col}>
               <h4>CONTACT</h4>
               <a href="mailto:nascraftdigitals@gmail.com">nascraftdigitals@gmail.com</a>
-              <a href={WHATSAPP} target="_blank" rel="noreferrer">{PHONE_DISPLAY}</a>
+              {PHONE_NUMBERS.map((phone, idx) => (
+                <a key={idx} href={phone.link} target="_blank" rel="noreferrer">{phone.display}</a>
+              ))}
               <Link to="/contact">Contact Form</Link>
             </div>
           </div>
